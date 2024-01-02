@@ -17,7 +17,19 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.blue,
-          title: const Text('This is AppBar'),
+          title: const Text(
+            'This is AppBar',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 32,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ),
+        body: Container(
+          height: 150,
+          width: 200,
+          color: Colors.green,
         ),
       ),
     );
